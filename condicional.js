@@ -154,9 +154,22 @@ function texto (primeracadena){
     }
 }
 
-
-
 function calcular (edadadactual) {
     let edadadactual = 2023 + prompt ("Ingrese su año de nacimiento")
     return edadadactual
 }
+
+
+
+
+let precioyedad= prompt ("Diagme su edad y El precio de cualquier producto")
+function parametros (precioyedad) {
+    if (precioyedad = "100") {
+        alert("Precio con descuento ")
+        return acceso
+    } else {
+        alert("precio sin descuento")
+        return acceso
+    }
+}
+parametros(precioyedad)
