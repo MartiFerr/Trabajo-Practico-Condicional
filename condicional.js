@@ -13,9 +13,9 @@ Bienvenida(nombre)
 let edadUsuario = Number(prompt('¿Como es tu edad?'))  
 function edadmayor(edadUsuario){
        {if ( edadUsuario >=18)
-       {alert ('Tu edad es mayor o igual a dieciocho')
+       {alert ('Sos mayor o igual a dieciocho')
         }else{
-         alert   ('Tu edad es menos de dieciocho')
+         alert   ('Sos menor de dieciocho')
         } }
         return 0
 }
@@ -79,9 +79,17 @@ if(( numero % 5) == 0){
     alert(numero + ' no es multiplo de 5');
 }
 
-
-
-
+let precioyedad= prompt ("Diagme su edad y El precio de cualquier producto")
+function parametros (precioyedad) {
+    if (precioyedad = "100") {
+        alert("Precio con descuento ")
+        return acceso
+    } else {
+        alert("precio sin descuento")
+        return acceso
+    }
+}
+parametros(precioyedad)
 
 
 
@@ -162,14 +170,3 @@ function calcular (edadadactual) {
 
 
 
-let precioyedad= prompt ("Diagme su edad y El precio de cualquier producto")
-function parametros (precioyedad) {
-    if (precioyedad = "100") {
-        alert("Precio con descuento ")
-        return acceso
-    } else {
-        alert("precio sin descuento")
-        return acceso
-    }
-}
-parametros(precioyedad)
