@@ -10,41 +10,43 @@ function Bienvenida(nombre) {
 }
 Bienvenida(nombre)
 
-let edadUsuario = Number(prompt('¿Como es tu edad?'))  
-function edadmayor(edadUsuario){
-       {if ( edadUsuario >=18)
-       {alert ('Sos mayor o igual a dieciocho')
-        }else{
-         alert   ('Sos menor de dieciocho')
-        } }
-        return 0
+let edadUsuario = Number(prompt('¿Como es tu edad?'))
+function edadmayor(edadUsuario) {
+    {
+        if (edadUsuario >= 18) {
+            alert('Sos mayor o igual a dieciocho')
+        } else {
+            alert('Sos menor de dieciocho')
+        }
+    }
+    return 0
 }
-edadmayor (edadUsuario)
+edadmayor(edadUsuario)
 
 
 
-let edad = prompt ('¿Cual es tu edad?')
+let edad = prompt('¿Cual es tu edad?')
 
-if (edad <= 11){
-    alert ('Sos un niño')
+if (edad <= 11) {
+    alert('Sos un niño')
 }
-else if (edad <=18){
-    alert ('Sos un adolecente')
+else if (edad <= 18) {
+    alert('Sos un adolecente')
 }
-else if (edad <=26){
-    alert ('Sos un Joven Adulto')
+else if (edad <= 26) {
+    alert('Sos un Joven Adulto')
 }
-else if (edad <=59){
-    alert ('Sos un adulto')
+else if (edad <= 59) {
+    alert('Sos un adulto')
 }
-else if (edad <=60){
-    alert ('Sos un anciano')
+else if (edad <= 60) {
+    alert('Sos un anciano')
 }
 
 
-let dias = prompt ("¿Que dia de la semana es hoy?")
+let dias = prompt("¿Que dia de la semana es hoy?")
 function Semana(dias) {
-    if ((dias == "Lunes") || (dias == "Martes") ||(dias == "Miercoles") || (dias == "Jueves") || (dias == "Viernes")) {
+    if ((dias == "Lunes") || (dias == "Martes") || (dias == "Miercoles") || (dias == "Jueves") || (dias == "Viernes")) {
         alert("Es un dia semanal")
         return dias
     } else {
@@ -56,7 +58,7 @@ Semana(dias)
 
 
 
-let acceso = prompt ("Ingrese una Contraseña")
+let acceso = prompt("Ingrese una Contraseña")
 function Contraseña(acceso) {
     if (acceso = "secreto") {
         alert("acceso concedido")
@@ -70,103 +72,96 @@ Contraseña(acceso)
 
 
 
-let numero = Number(prompt('Coloca un numero')) 
-if(( numero % 5) == 0){
-    
+let numero = Number(prompt('Coloca un numero'))
+if ((numero % 5) == 0) {
+
     alert(numero + ' es multiplo de 5');
-    }else{
+} else {
 
     alert(numero + ' no es multiplo de 5');
 }
 
-let precioyedad= prompt ("Diagme su edad y El precio de cualquier producto")
-function parametros (precioyedad) {
-    if (precioyedad = "100") {
-        alert("Precio con descuento ")
-        return acceso
-    } else {
-        alert("precio sin descuento")
-        return acceso
+function CalculoDescuento(edad, precio) 
+    {
+        if (edad > 65){
+            return ((precio * 90) % 100)
+        } else {
+        return precio
     }
 }
-parametros(precioyedad)
 
 
-
-let ClasificacionNum = prompt ('¿Cual es tu nota del 0 al 100?')
-function Condicion  (ClasificacionNum){
-if (ClasificacionNum<= 100){
-    alert ('Tu calificacion es MS (Muy Satifactorio)')
+let ClasificacionNum = prompt('¿Cual es tu nota del 0 al 100?')
+function Condicion(ClasificacionNum) {
+    if (ClasificacionNum <= 100) {
+        alert('Tu calificacion es MS (Muy Satifactorio)')
+    }
+    else if (ClasificacionNum <= 79) {
+        alert('Tu calificacion es S (Satifactorio)')
+    }
+    else if (edad < 60) {
+        alert('Tu calificacion es EP (En Proceso)')
+    }
 }
-else if (ClasificacionNum <=79){
-    alert ('Tu calificacion es S (Satifactorio)')
-}
-else if (edad <60){
-    alert ('Tu calificacion es EP (En Proceso)')
-}
-}
-Condicion (ClasificacionNum)
+Condicion(ClasificacionNum)
 
 
 
 
 
-let diadesemana = prompt ('¿Que dia de la semana es?')
-function recibir (diadesemana){
-if (diadesemana = 1 ){
-    alert ('1 es Lunes')
+let diadesemana = prompt('¿Que dia de la semana es?')
+function recibir(diadesemana) {
+    if (diadesemana = 1) {
+        alert('1 es Lunes')
+    }
+    else if (diadesemana = 2) {
+        alert('2 es Martes')
+    }
+    else if (diadesemana = 3) {
+        alert('3 es Miercoles')
+    }
+    else if (diadesemana = 4) {
+        alert('4 es Jueves')
+    }
+    else if (diadesemana = 5) {
+        alert('5 es Viernes')
+    }
+    else if (diadesemana = 6) {
+        alert('6 es Sabado')
+    }
+    else if (diadesemana = 7) {
+        alert('7 es Domingo')
+    }
 }
-else if (diadesemana = 2 ){
-    alert ('2 es Martes')
-}
-else if (diadesemana = 3 ){
-    alert ('3 es Miercoles')
-}
-else if (diadesemana = 4){
-    alert ('4 es Jueves')
-}
-else if (diadesemana = 5){
-    alert ('5 es Viernes')
-}
-else if (diadesemana = 6){
-    alert ('6 es Sabado')
-}
-else if (diadesemana = 7){
-    alert ('7 es Domingo')
-}
-}
-recibir (diadesemana)
+recibir(diadesemana)
 
 
 
 
-let añobisiesto = Number(prompt('Coloca un año')) 
-if(( añobisiesto % 4) == 0){
-    
+let añobisiesto = Number(prompt('Coloca un año'))
+if ((añobisiesto % 4) == 0) {
+
     alert(añobisiesto + ' es año bisiesto');
-    }else{
+} else {
 
-    alert(añobisiesto+ ' no es año bisiesto');
+    alert(añobisiesto + ' no es año bisiesto');
 }
 
 
-let primeracadena = prompt ('Coloca una palabra')
-let segundacadena = prompt ('Coloca una palabra')
-function texto (primeracadena){
-    if(( primeracadena) == segundacadena){
-    
-        alert(añobisiesto + ' son iguales');
-        }else{
-    
-        alert(añobisiesto+ ' no son iguales');
+let primeracadena = prompt('Coloca una palabra')
+let segundacadena = prompt('Coloca una palabra')
+function texto(primeracadena) {
+    if (primeracadena == segundacadena) {
+
+        alert(' son iguales');
+    } else {
+
+        alert('no son iguales');
     }
 }
-
-function calcular (edadadactual) {
-    let edadadactual = 2023 + prompt ("Ingrese su año de nacimiento")
+let añoNacimiento = Number(prompt('Ingresa tu año de nacimiento'))
+function calcular(año) {
+   
+    let edadadactual = 2023 - año
     return edadadactual
 }
-
-
-
-
