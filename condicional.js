@@ -93,16 +93,15 @@ function CalculoDescuento(edad, precio)
 
 let ClasificacionNum = prompt('¿Cual es tu nota del 0 al 100?')
 function Condicion(ClasificacionNum) {
-    if (ClasificacionNum <= 100) {
-        alert('Tu calificacion es MS (Muy Satifactorio)')
+    if (ClasificacionNum < 60) {
+       return 'Tu calificacion es EP (En Proceso)'
     }
-    else if (ClasificacionNum <= 79) {
-        alert('Tu calificacion es S (Satifactorio)')
+    else if (ClasificacionNum < 80) {
+        return 'Tu calificacion es S (Satifactorio)'
     }
     else if (edad < 60) {
-        alert('Tu calificacion es EP (En Proceso)')
-    }
-}
+        return 'Tu calificacion es MS (Muy Satifactorio)'
+}}
 Condicion(ClasificacionNum)
 
 
@@ -159,9 +158,11 @@ function texto(primeracadena) {
         alert('no son iguales');
     }
 }
+
+
+
 let añoNacimiento = Number(prompt('Ingresa tu año de nacimiento'))
-function calcular(año) {
-   
-    let edadadactual = 2023 - año
-    return edadadactual
+function calcular(año){
+     let edad = 2023 - año
+   return edad
 }
