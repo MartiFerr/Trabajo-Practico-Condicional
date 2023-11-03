@@ -44,13 +44,14 @@ else if (edad <= 60) {
 }
 
 
-let dias = prompt("¿Que dia de la semana es hoy?")
+let Semana = prompt("¿Que dia de la semana es hoy?")
 function Semana(dias) {
-    if ((dias == "Lunes") || (dias == "Martes") || (dias == "Miercoles") || (dias == "Jueves") || (dias == "Viernes")) {
-        alert("Es un dia semanal")
+    if ((dias == "Lunes") || (dias == "Martes") || (dias == "Miercoles") || (dias == "Jueves") || (dias == "Viernes") || (dias == "Sabado"))
+    {
+        alert("Es un dia laborable")
         return dias
     } else {
-        alert("Es Finde Semana")
+        alert("Es un dia no laborable")
         return dias
     }
 }
@@ -110,26 +111,26 @@ Condicion(ClasificacionNum)
 
 let diadesemana = prompt('¿Que dia de la semana es?')
 function recibir(diadesemana) {
-    if (diadesemana = 1) {
+    if (diadesemana == 1) {
         alert('1 es Lunes')
     }
-    else if (diadesemana = 2) {
-        alert('2 es Martes')
+    else if (diadesemana == 2) {
+      return  alert('2 es Martes')
     }
-    else if (diadesemana = 3) {
-        alert('3 es Miercoles')
+    else if (diadesemana == 3) {
+       return alert('3 es Miercoles')
     }
-    else if (diadesemana = 4) {
-        alert('4 es Jueves')
+    else if (diadesemana == 4) {
+     return   alert('4 es Jueves')
     }
-    else if (diadesemana = 5) {
-        alert('5 es Viernes')
+    else if (diadesemana == 5) {
+     return   alert('5 es Viernes')
     }
-    else if (diadesemana = 6) {
-        alert('6 es Sabado')
+    else if (diadesemana == 6) {
+      return  alert('6 es Sabado')
     }
-    else if (diadesemana = 7) {
-        alert('7 es Domingo')
+    else if (diadesemana == 7) {
+     return   alert('7 es Domingo')
     }
 }
 recibir(diadesemana)
